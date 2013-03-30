@@ -47,6 +47,7 @@ var wallet = function(doc, x, y) {
 	/* folding circles text */
 	doc.setFillColor(0);
 	doc.setFontSize(7);
+	doc.setFont('helvetica', 'normal');
 	doc.text(x + 32-0.7, y + 64+0.9, '1');
 	doc.text(x + 96-0.7, y + 64+0.9, '2');
 	doc.text(x + 64-0.7, y + 32+0.9, '3');
@@ -57,7 +58,7 @@ var wallet = function(doc, x, y) {
 
 	/* url */
 	doc.setFontSize(7);
-	doc.text(x + 41.5, y + 50.5, 'papercoin.org');
+	doc.text(x + 41.25, y + 50.5, 'papercoin.org');
 
 	/* remarks */
 	doc.setFontSize(5);
