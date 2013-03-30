@@ -40,34 +40,34 @@ var wallet = function(doc, x, y) {
 	doc.circle(x + 96, y + 64, 1.5, 'FD');
 	doc.circle(x + 64, y + 32, 1.5, 'FD');
 	doc.circle(x + 64, y + 96, 1.5, 'FD');
-	doc.circle(x + 80, y + 48, 1.5, 'FD');
-	doc.circle(x + 80, y + 80, 1.5, 'FD');
+	doc.circle(x + 48, y + 48, 1.5, 'FD');
+	doc.circle(x + 48, y + 80, 1.5, 'FD');
 	doc.circle(x + 64, y + 64, 1.5, 'FD');
 
 	/* folding circles text */
 	doc.setFillColor(0);
 	doc.setFontSize(7);
 	doc.setFont('helvetica', 'normal');
-	doc.text(x + 32-0.7, y + 64+0.9, '1');
-	doc.text(x + 96-0.7, y + 64+0.9, '2');
-	doc.text(x + 64-0.7, y + 32+0.9, '3');
-	doc.text(x + 64-0.8, y + 96+0.9, '4');
-	doc.text(x + 80-0.7, y + 48+0.9, '5');
-	doc.text(x + 80-0.8, y + 80+0.9, '6');
-	doc.text(x + 64-0.7, y + 64+0.9, '7');
+	doc.text(x + 32-0.7, y + 64+0.8, '1');
+	doc.text(x + 96-0.7, y + 64+0.8, '2');
+	doc.text(x + 64-0.7, y + 32+0.8, '3');
+	doc.text(x + 64-0.8, y + 96+0.8, '4');
+	doc.text(x + 48-0.7, y + 48+0.8, '5');
+	doc.text(x + 48-0.8, y + 80+0.8, '6');
+	doc.text(x + 64-0.7, y + 64+0.8, '7');
 
 	/* url */
 	doc.setFontSize(7);
-	doc.text(x + 41.25, y + 50.5, 'papercoin.org');
+	doc.text(x + 73.25, y + 50.5, 'papercoin.org');
 
 	/* remarks */
 	doc.setFontSize(5);
-	doc.text(x + 76.5, y + 52, 'remarks:');
+	doc.text(x + 44.5, y + 52, 'remarks:');
 
 	/* public address */
 	doc.setFontSize(4.2);
 	doc.setFont('courier', 'normal');
-	doc.text(x + 33, y + 79, addr.pub);
+	doc.text(x + 65, y + 79, addr.pub);
 
 	/* private key */
 	doc.setFontSize(7);
@@ -79,7 +79,7 @@ var wallet = function(doc, x, y) {
 	doc.text(x +   54, y +  13, addr.priv.slice(38));
 
 	/* qr code */
-	print_qr(doc, x + 35.5, y + 52, 25.0, addr.pub);
+	print_qr(doc, x + 67.5, y + 52, 25.0, addr.pub);
 };
 
 var papercoin = function() {
