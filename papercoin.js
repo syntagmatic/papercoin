@@ -92,7 +92,7 @@ var papercoin = function() {
 	doc.setFontSize(10);
 	doc.text(20.5, 44, 'Steps:');
 	doc.text(20.5, 48, '1. Cut-out along the thick lines.');
-	doc.text(20.5, 52, '2. Fold along the thin lines following the number order in circles.');
+	doc.text(20.5, 52, '2. Fold (180 degrees) along the thin lines following the number order in circles.');
 	doc.text(20.5, 56, '3. Use a sticky tape to attach the two sides marked with triangles.');
 
 	wallet(doc, 20.5, 20.5+41);
