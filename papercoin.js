@@ -95,10 +95,10 @@ var papercoin = function() {
 	doc.text(20.5, 52, '2. Fold (180 degrees) along the thin lines following the number order in circles.');
 	doc.text(20.5, 56, '3. Use a sticky tape to attach the two sides marked with triangles.');
 
-	wallet(doc, 20.5, 20.5+41);
-	wallet(doc, 20.5+64, 20.5+41);
-	wallet(doc, 20.5+2*64, 20.5+41);
-	wallet(doc, 20.5+3*64, 20.5+41);
+	wallet(doc, 17.5, 20.5+41);
+	wallet(doc, 17.5+64+2, 20.5+41);
+	wallet(doc, 17.5+2*64+4, 20.5+41);
+	wallet(doc, 17.5+3*64+6, 20.5+41);
 
 	doc.save('papercoin.pdf');
 
