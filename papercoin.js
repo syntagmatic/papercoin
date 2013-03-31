@@ -80,6 +80,8 @@ var wallet = function(doc, x, y) {
 
 var papercoin = function() {
 
+	rng_seed_time();
+
 	var doc = new jsPDF('l');
 
 	doc.setFontSize(36);
