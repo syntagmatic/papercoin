@@ -1,5 +1,7 @@
 var print_qr = function(doc, x, y, size, text) {
-	var qr = new qrcode(4, 'H'); qr.addData(text); qr.make();
+	var typesize = 4;
+	if (text[0] == '5') typesize = 6;
+	var qr = new qrcode(typesize, 'H'); qr.addData(text); qr.make();
 	var m = qr.getModuleCount();
 	var s = size / m;
 	doc.setFillColor(0);
@@ -69,13 +71,16 @@ var wallet = function(doc, x, y) {
 
 	/* private key */
 	doc.setFontSize(7);
-	doc.text(x + 22.5, y + 123.5, addr.priv.slice(0,13));
-	doc.text(x + 22.5, y + 126.5, addr.priv.slice(13, 26));
-	doc.text(x + 22.5, y +   3, addr.priv.slice(26, 39));
-	doc.text(x + 22.5, y +   6, addr.priv.slice(39));
+	doc.text(x + 16, y + 120.5, addr.priv.slice(0, 9));
+	doc.text(x + 16, y + 123.5, addr.priv.slice(9, 18));
+	doc.text(x + 16, y + 126.5, addr.priv.slice(18, 27));
+	doc.text(x + 16, y +   3, addr.priv.slice(27, 36));
+	doc.text(x + 16, y +   6, addr.priv.slice(36, 45));
+	doc.text(x + 16, y +   9, addr.priv.slice(45));
 
-	/* qr code */
+	/* qr codes */
 	print_qr(doc, x + 35.5, y + 52, 25.0, addr.pub);
+	print_qr(doc, x + 34, y + 113, 14.0, addr.priv);
 };
 
 var papercoin = function() {
