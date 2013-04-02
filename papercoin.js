@@ -94,8 +94,8 @@ var papercoin = function() {
 	doc.setFontSize(24);
 	doc.text(117, 20, '"The first origami that can buy you a pizza"');
 	doc.setFontSize(12);
-	doc.text(20.5, 30, 'You are welcome to donate to 14NeoVzxm6AESTzPKdANmvuZzDxBDNBma7 if you like this idea, thanks!');
-	print_qr(doc, 245.5, 25, 31.0, '14NeoVzxm6AESTzPKdANmvuZzDxBDNBma7');
+	doc.text(20.5, 30, 'You are welcome to donate to 16DrKT1JpA4tCVxzhCYQ4FxLnGbbZ46ukE if you like this idea, thanks!');
+	print_qr(doc, 245.5, 25, 31.0, '16DrKT1JpA4tCVxzhCYQ4FxLnGbbZ46ukE');
 	doc.setFontSize(10);
 	doc.text(20.5, 44, 'Steps:');
 	doc.text(20.5, 48, '1. Cut-out along the thick lines.');
