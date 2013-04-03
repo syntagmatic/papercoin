@@ -3,11 +3,11 @@ PaperCoin - one-click generator for paper wallets
 
 http://papercoin.org/
 
-1) Click the red button
-2) Print the page
-3) Follow the instructions on the paper
-4) Send coins to the wallet
-5) Enjoy!
+1. Click the red button
+2. Print the page
+3. Follow the instructions on the paper
+4. Send coins to the wallet
+5. Enjoy!
 
 Licensed under GNU Affero General Public License 3.0
 
