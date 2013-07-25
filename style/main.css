@@ -22,13 +22,15 @@ time, mark, audio, video {
 html, body {
 	width: 100%;
   height: 100%;
+  font-size: 15px;
+  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+	background: #fff;
+	color: #16161d;
+  line-height: 1.5em;
 }
 
-body {
-	background: #e8e8e8;
-	color: #16161d;
-  line-height: 1.5;
-  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+p {
+  margin: 1em 0;
 }
 
 a, a:active {
@@ -41,17 +43,13 @@ a:hover {
 	text-decoration: none;
 }
 
-.red {
-  color: red;
-}
-
 #main-container {
 	width: 100%;
 }
 
 #main-content {
 	position: relative;
-	width: 450px;
+	width: 600px;
 	margin: 0 auto;
 }
 
@@ -59,9 +57,14 @@ a:hover {
 	padding: 40px 0 20px;
 }
 
-#title h1 {
+h1 {
   font-size: 1.4em;
   font-weight: bold;
+}
+
+h2 {
+  font-weight: bold;
+  margin: 1em 0;
 }
 
 #printer-container {
@@ -70,7 +73,7 @@ a:hover {
 
 #main-button {
   position: absolute;
-  padding-right: 60px;
+  padding-right: 140px;
   right: 0;
   font-size: 1.8em;
   color: red;
